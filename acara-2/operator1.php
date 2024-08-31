@@ -7,4 +7,8 @@ echo "Nilai Tugas I :".$tugas1."<br>";
 echo "Nilai Tugas II:".$tugas2."<br>";
 echo "Jumlah Tugas :".$jumlah."<br>";
 echo "Rerata Tugas :".$rerata;
+echo "<br>";
+// menambahkan operator penggabungan string (".")
+$gabung = "Hasil penggabungan : " .$tugas1 . $tugas2;
+echo $gabung;
 ?>

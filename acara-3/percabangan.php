@@ -1,10 +1,8 @@
 <?php
 
 // Logika sederhana untuk mengecek ketersedian
-$tanggal = "2024-09-02";
-$tanggal_tersedia = ["2024-09-01", "2024-09-02", "2024-09-03"]; // Tanggal tersedia
-var_dump($tanggal_tersedia);
-if (in_array(trim($tanggal), $tanggal_tersedia)) {
+$tanggal_tersedia = ["2024-09-01", "2024-02-03", "2024-09-03"]; // Tanggal tersedia
+if (in_array("2024-02-03", $tanggal_tersedia)) {
     echo "Tiket tersedia untuk tanggal tersebut.";
 } else {
     echo "Tiket tidak tersedia untuk tanggal tersebut.";

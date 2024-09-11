@@ -1,24 +1,39 @@
 <?php
 
     class Kalkulator{
-        public function penjumlahan($angka1,$angka2) : int
+        private $angka1; 
+        private $angka2;
+
+        public function __construct($angka1 = 0,$angka2 = 0)
         {
-            return $angka1 + $angka2;
+            $this->angka1 = $angka1;
+            $this->angka2 = $angka2;
         }
-
-        public function pengurangan(int $angka1,$angka2) : int
+        public function penjumlahan() : int
         {
-            return $angka1 - $angka2;
+            return $this->angka1 + $this ->angka2;
         }
 
-        public function pembagian($angka1,$angka2) : float
+        public function pengurangan() : int
         {
-            return $angka1 / $angka2;
+            return $this->angka1 - $this ->angka2;;
         }
 
-        public function perkalian($angka1,$angka2) : int{
-            return $angka1 * $angka2;
+        public function pembagian() : float
+        {
+            return $this->angka1 / $this ->angka2;;
         }
 
+        public function perkalian() : int{
+            return $this->angka1 * $this ->angka2;;
+        }
+    }
 
+    class main{
+        public function main()
+        {
+            $kalkulator = new Kalkulator(5, 2);
+            echo $kalkulator->pembagian();
+            var_dump($kalkulator->pengurangan());
+        }
     }

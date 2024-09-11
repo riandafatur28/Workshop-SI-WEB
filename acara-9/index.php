@@ -6,6 +6,6 @@ $person1 = new Person();
 $person1->set_name('Lukman Hakim');
 // akses value dari properti name
 echo $person1->get_name();
-// properti tidak bisa di akses secara langsung, kana muncul error
+// properti tidak bisa di akses secara langsung
 echo "Hai " . $person1->name = 'Taufiq Rizaldi';
 echo "<hr>";

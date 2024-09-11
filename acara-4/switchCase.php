@@ -13,8 +13,4 @@ switch ($role) {
     default:
         echo "Role tidak dikenali";
 }
-?>Nama		: ILMAN NAFIAN
-NIM		: E41231969
-Golongan	: C
-ACARA 4
-Perulangan pada PHP
+?>
